@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Clima ao Vivo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Clima ao Vivo 🌍</h1>
+
+    <div class="search-box">
+      <input type="text" id="city" placeholder="Digite o nome da cidade" aria-label="Cidade" />
+      <button id="search-btn" type="button" aria-label="Buscar clima">Buscar</button>
+    </div>
+
+    <div id="weather-info" class="hidden" role="region" aria-live="polite">
+      <h2 id="city-name"></h2>
+
+      <div class="weather-main">
+        <!-- Canvas para ícone animado -->
+        <canvas id="weather-canvas" width="96" height="96" class="hidden"></canvas>
+        <!-- Fallback: ícone PNG da OpenWeather -->
+        <img id="owm-icon" alt="Ícone do clima" class="hidden" width="96" height="96" />
+        <p id="description"></p>
+      </div>
+
+      <p id="temperature"></p>
+      <p id="humidity"></p>
+      <p id="wind-speed"></p>
+    </div>
+  </div>
+
+  <!-- Skycons (ícones animados). Se preferir, mantenha apenas um dos CDNs. -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/skycons/1396634940/skycons.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

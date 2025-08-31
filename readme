@@ -1,0 +1,60 @@
+📘 README do Projeto - Clima ao Vivo 🌍
+
+📌 Descrição
+
+Este é um aplicativo simples e responsivo de previsão do tempo. Ele permite ao usuário digitar o nome de qualquer cidade e, em tempo real, consultar as informações climáticas atuais, como temperatura, descrição do clima, umidade e velocidade do vento.
+
+Os ícones animados foram adicionados para deixar a interface mais moderna e interativa.
+
+🚀 Tecnologias Utilizadas
+
+HTML5 → estrutura do app
+
+CSS3 (responsivo + estilização moderna)
+
+JavaScript (ES6+) → integração com API e manipulação do DOM
+
+OpenWeather API
+ → dados climáticos em tempo real
+
+Skycons → ícones animados para condições do tempo
+
+🎨 Funcionalidades
+
+Busca de clima em qualquer cidade do mundo
+
+Exibição de:
+
+🌡️ Temperatura
+
+☁️ Descrição do clima
+
+💧 Umidade
+
+💨 Velocidade do vento
+
+Ícones animados dinâmicos que mudam de cor conforme o clima (sol amarelo, chuva azul, neve turquesa etc.)
+
+Interface responsiva que funciona em celular, tablet e computador
+
+📂 Estrutura de Arquivos
+📁 clima-ao-vivo
+│── index.html       # Estrutura da página
+│── style.css        # Estilos responsivos e modernos
+│── script.js        # Lógica da busca e exibição de dados
+
+⚙️ Como Usar
+
+Baixe ou clone o repositório
+
+Crie uma conta no OpenWeather
+ e gere sua API Key gratuita
+
+Substitua a chave no arquivo script.js:
+
+const apiKey = 'SUA_CHAVE_AQUI';
+
+
+Abra o arquivo index.html no navegador
+
+Digite o nome de uma cidade e clique em Buscar Clima
